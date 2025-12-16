@@ -14,11 +14,11 @@ jobs:
        run: echo "this is test cases"
 
      - name: Genrating report
-       run: echo "ALLTEST CASES PASSED....!" > output.txt
+       run: echo "ALLTEST CASES PASSED....!" > outpoot.txt
 
      - name: upload artifact
        uses: actions/upload-artifact@v4
        with:
          name: test-report
-         path: output.txt
+         path: outpoot.txt
    
