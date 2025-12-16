@@ -1,0 +1,15 @@
+name: My-First_runner_workflow
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps: 
+      - name: test app code
+        run: ls -l
+
+      - name: create file in self-hosted runner
+        run: echo "Testing the self Hosted Runner" > output.txt
