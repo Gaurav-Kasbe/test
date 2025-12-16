@@ -1,0 +1,28 @@
+name: My First Workflow
+
+on: [push]
+
+jobs:
+ Build:
+   runs-on: ubuntu-latest
+
+  steps:
+    - name: Code Checkout Repo
+      uses: actions/checkout@v5
+
+    - name: Building
+      run: echo "Building....."
+
+ Test:
+   runs-on: ubuntu-latest
+
+  steps:
+    - name: Testing
+      run: echo "Testing......,,,"
+
+ Deploy:
+   runs-on: ubuntu-latest
+
+  steps:
+    - name: Deployment
+      run: echo "Deploying......"
